@@ -49,7 +49,9 @@ public class video_list extends Activity {
                             JSONArray jarray=new JSONArray(response.get("message").toString());
                             Log.d("Debug",jarray.toString());
                             for(int i=0;i<jarray.length();i++){
-                                show.append("");
+                                JSONObject jobject=jarray.getJSONObject(i);
+                                show.append("username："+jobject.get("username")
+                                +"\nurl："+jobject.get("url")+"\n");
                             }
                         } catch (Exception e) {
                             e.printStackTrace();
