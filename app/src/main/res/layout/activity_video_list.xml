@@ -4,10 +4,10 @@
     android:layout_height="match_parent"
     tools:context="lab414.bupt.com.lifiwiki.video_list">
 
-    <TextView
-        android:id="@+id/show"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Please wait... ..." />
+    <ListView
+        android:id="@+id/videolist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"/>
 
 </RelativeLayout>
