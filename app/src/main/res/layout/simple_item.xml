@@ -8,13 +8,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="name"
-        android:textSize="30dp"/>
+        android:textSize="22dp"/>
 
     <TextView
         android:id="@+id/url"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="url"
-        android:textSize="30dp"/>
+        android:textSize="18dp"/>
 
 </LinearLayout>
