@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="lab414.bupt.com.lifiwiki" >
+
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".Regist"
+            android:label="@string/title_activity_regist" >
+        </activity>
+        <activity
+            android:name=".Personal"
+            android:label="@string/title_activity_personal" >
+        </activity>
+        <activity
+            android:name=".uplpad"
+            android:label="@string/title_activity_uplpad" >
+        </activity>
+        <activity
+            android:name=".Quanzi"
+            android:label="@string/title_activity_quanzi" >
+        </activity>
+        <activity
+            android:name=".Scan"
+            android:label="@string/title_activity_scan" >
+        </activity>
+        <activity
+            android:name=".surface"
+            android:label="@string/title_activity_surface" >
+        </activity>
+        <activity
+            android:name=".BaikeView"
+            android:label="@string/title_activity_baike_view" >
+        </activity>
+        <activity
+            android:name=".video_surface"
+            android:label="@string/title_activity_video_surface" >
+        </activity>
+        <activity
+            android:name=".video_list"
+            android:label="@string/title_activity_video_list" >
+        </activity>
+    </application>
+
+</manifest>

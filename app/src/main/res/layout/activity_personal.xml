@@ -1,0 +1,167 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/personalback"
+    tools:context="lab414.bupt.com.lifiwiki.Personal">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:id="@+id/head"
+            android:layout_marginLeft="50dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/photo"/>
+        <TextView
+            android:id="@+id/username"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Neel Christina"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/linearLayout2">
+
+            <Button
+                android:id="@+id/changePasswd"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:text="修改密码"
+                android:textSize="17dp"
+                android:gravity="left"
+                android:textColor="#ffffff"/>
+            <Button
+                android:id="@+id/changePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:text="修改绑定手机"
+                android:textSize="17dp"
+                android:gravity="left"
+                android:textColor="#ffffff"/>
+            <Button
+                android:id="@+id/changeEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:text="修改绑定邮箱"
+                android:textSize="17dp"
+                android:gravity="left"
+                android:textColor="#ffffff"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/addFriend"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="110dp"
+            android:layout_height="45dp"
+            android:background="@drawable/addfriend"
+            android:layout_alignBottom="@+id/linearLayout2"
+            android:layout_alignParentEnd="true" />
+
+        <LinearLayout
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="朋友圈"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/pengyouquanNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="183"
+                    android:textSize="40dp"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="好友数"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/frientNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="70"
+                    android:textSize="40dp"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:paddingTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="收到的赞"
+                    android:textColor="#ffffff"/>
+
+                <TextView
+                    android:id="@+id/zanNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="328"
+                    android:textSize="40dp"
+                    android:textColor="#ffffff" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</RelativeLayout>

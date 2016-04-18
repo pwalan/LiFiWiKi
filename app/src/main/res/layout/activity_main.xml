@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_marginBottom="50dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/mainbackfround"/>
+
+    <LinearLayout
+        android:layout_marginBottom="40dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/shipinchakan"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/shipin"/>
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="fill_parent" />
+
+            <ImageButton
+                android:id="@+id/baikechakan"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/baike"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="130dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/gerenzhongxin"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/geren"/>
+
+            <LinearLayout
+                android:layout_width="30dp"
+                android:layout_height="fill_parent" />
+
+            <ImageButton
+                android:id="@+id/caozuozhinan"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/zhinan"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="#e5e5e5"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout">
+
+        <ImageButton
+            android:id="@+id/zhuye"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/mainone"/>
+
+        <ImageButton
+            android:id="@+id/pengyouquan"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/pengyouquantwo"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/fabiao"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/mainupload"
+        android:layout_marginBottom="-30dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

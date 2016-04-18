@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LiFeWiKi</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_regist">Regist</string>
+    <string name="title_activity_personal">Personal</string>
+    <string name="title_activity_uplpad">uplpad</string>
+    <string name="title_activity_quanzi">Quanzi</string>
+    <string name="title_activity_scan">Scan</string>
+    <string name="title_activity_surface">surface</string>
+    <string name="title_activity_baike_view">BaikeView</string>
+    <string name="title_activity_video_surface">video_surface</string>
+    <string name="title_activity_video_list">video_list</string>
+</resources>

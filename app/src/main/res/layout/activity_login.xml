@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginback"
+    tools:context="lab414.bupt.com.lifiwiki.Login">
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerVertical="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/username"
+            android:paddingLeft="40dp"
+            android:layout_marginTop="120dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:inputType="text"
+            android:background="@drawable/inputbucket"
+            android:hint="用户名"
+            android:textColor="#e8e8e8"
+            android:textColorHint="#e8e8e8"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:paddingLeft="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:inputType="textPassword"
+            android:background="@drawable/inputbucket"
+            android:hint="密码"
+            android:textColorHint="#e8e8e8"
+            android:textColor="#e8e8e8" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_above="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="登录"
+        android:textColor="#e8e8e8"
+        android:background="#d23c43"
+        android:textSize="15dp"/>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/newcount"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:text="注册新账号"
+            android:textColor="#e8e8e8"
+            android:textSize="14dp"/>
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="fill_parent"
+            android:background="@drawable/whiteline"/>
+
+        <Button
+            android:id="@+id/forgetpassword"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:text="忘记密码"
+            android:textColor="#e8e8e8"
+            android:textSize="14dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
