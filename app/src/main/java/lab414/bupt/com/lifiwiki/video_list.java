@@ -45,9 +45,12 @@ public class video_list extends Activity {
                     final TextView show = (TextView) findViewById(R.id.show);
                     if(response != null) {
                         try {
-                            show.setText(response.toString());
+                            show.setText(response.toString()+"\n");
                             JSONArray jarray=new JSONArray(response.get("message").toString());
                             Log.d("Debug",jarray.toString());
+                            for(int i=0;i<jarray.length();i++){
+                                show.append("");
+                            }
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
