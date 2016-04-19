@@ -22,7 +22,7 @@
             android:layout_marginLeft="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Neel Christina"
+            android:text="用户名"
             android:textColor="#ffffff"
             android:textStyle="bold"
             android:textSize="25dp" />
@@ -104,7 +104,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="183"
+                    android:text="0"
                     android:textSize="40dp"
                     android:textColor="#ffffff" />
 
@@ -129,7 +129,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="70"
+                    android:text="0"
                     android:textSize="40dp"
                     android:textColor="#ffffff" />
 
@@ -154,7 +154,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:text="328"
+                    android:text="0"
                     android:textSize="40dp"
                     android:textColor="#ffffff" />
 
