@@ -32,7 +32,7 @@ public class C {
 	/**
 	 * ��ͬһ������������ ��������ip��ַ
 	 */
-	static public final String IP = "http://10.125.109.23:8080/";
+	static public final String IP = "http://192.168.0.105:8080/";
 	
 	static public final String getTestJson = IP + "LifeWIKI/usertest";
 
@@ -47,8 +47,6 @@ public class C {
 	//加新的网络请求地址（action）
 
 	static public final String saveUp = IP + "LifeWIKI/saveup";
-
-
 	
 	static public JSONObject asyncPost(String toUrl, HashMap content) {
 		PostThread t = new PostThread(toUrl, content);

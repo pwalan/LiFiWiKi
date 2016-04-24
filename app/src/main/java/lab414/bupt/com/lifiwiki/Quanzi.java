@@ -2,6 +2,7 @@ package lab414.bupt.com.lifiwiki;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Handler;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.view.ViewPager;
@@ -18,6 +19,8 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -50,6 +53,12 @@ public class Quanzi extends FragmentActivity implements View.OnClickListener,Vie
     private int screen1_2;
 
     private LinearLayout.LayoutParams lp;
+
+    private JSONObject response_pyq;
+
+    private JSONObject response_wode;
+
+    Handler handler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

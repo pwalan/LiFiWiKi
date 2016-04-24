@@ -177,6 +177,10 @@ public class video_surface extends Activity {
             things = fu.get().toString();
             Log.e("things", things);
 
+            //取消进度框
+            if(dialog!=null) dialog.dismiss();
+            Toast.makeText(video_surface.this, "识别成功！", Toast.LENGTH_SHORT).show();
+
             //跳转到video_list
             Intent intent=new Intent(video_surface.this,video_list.class);
             intent.putExtra("things",things);
